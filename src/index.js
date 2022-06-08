@@ -1,5 +1,5 @@
-import fetchCountries from './js/fetchCountries';
-import './css/styles.css';
 
+import './css/styles.css';
+import fetchCountries from './fetchCountries.js';
 const DEBOUNCE_DELAY = 300;
-fetchCountries(ukraine);
+fetchCountries(peru);
