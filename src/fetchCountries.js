@@ -46,10 +46,10 @@ function renderCountryCard(country){
 function makeMarkupCountryList(country){
     refs.listCountry.classList.remove('is-hidden');
     const markup = country.map((contr) =>
-    `<li>
-    <img class ="img-flag" src="${contr.flags.svg}" alt="flag" width = 50px>${contr.name.common}
-    </li> `)
-    .join("");
+            `<li>
+            <img class ="img-flag" src="${contr.flags.svg}" alt="flag" width = 50px>${contr.name.common}
+            </li> `)
+            .join("");
     return refs.listCountry.innerHTML = markup; 
 };
      
