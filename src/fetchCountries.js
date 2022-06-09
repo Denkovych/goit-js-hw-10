@@ -15,10 +15,8 @@ function fetchCountryByName(name){
             refs.listCountry.classList.add('is-hidden');
             Notify.info("Too many matches found. Please enter a more specific name.");
         }else if(country.length >= 2 && country.length <= 10){
-            console.log(country);
             refs.infoCountry.classList.add('is-hidden');  
             return makeMarkupCountryList(country);
-            
         } else{
             refs.listCountry.classList.add('is-hidden');
             return renderCountryCard(country[0]);}
